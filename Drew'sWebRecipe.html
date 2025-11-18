@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pumpkin Chocolate Chip Cookies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff7e6;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        h1 { color: #a14600; }
+        h2 { color: #cc6d00; }
+
+        img {
+            width: 250px;
+            height: auto;
+            border: 3px solid #a14600;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #a14600;
+            font-weight: bold;
+        }
+
+        /* Tab styling */
+        .tab {
+            overflow: hidden;
+            border-bottom: 2px solid #cc6d00;
+            margin-top: 20px;
+        }
+
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ffe0b3;
+        }
+
+        .tab button.active {
+            background-color: #cc6d00;
+            color: white;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pumpkin Chocolate Chip Cookies</h1>
+<h2>Soft, sweet, and full of warm fall flavor</h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Recipe')" id="defaultOpen">Recipe</button>
+  <button class="tablinks" onclick="openTab(event, 'Ingredients')">Ingredients</button>
+  <button class="tablinks" onclick="openTab(event, 'Preparation')">Preparation</button>
+</div>
+
+<div id="Recipe" class="tabcontent">
+    <p>
+        These pumpkin chocolate chip cookies are easy to make and deliver a soft, cake-like texture 
+        with the perfect amount of cinnamon and chocolate. They bake quickly and work great for parties, 
+        holidays, or just a cozy evening treat.
+    </p>
+    <img src="CookieImage.webp" alt="Soft pumpkin chocolate chip cookies on a plate">
+</div>
+
+<div id="Ingredients" class="tabcontent">
+    <h2>Ingredients (tap to add to SaveMart cart)</h2>
+    <ul>
+        <li><a href="https://shop.savemart.com/store/savemart/products/38030-libby-s-pumpkin-100-pure-pumpkin-29-oz" target="_blank">1 cup canned pumpkin</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/24001-c-h-pure-cane-granulated-white-sugar-16-oz" target="_blank">1 cup sugar</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/19553318-sunny-select-vegetable-oil-48-fl-oz" target="_blank">1/2 cup vegetable oil</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/20697305-sunnyside-farms-cage-free-eggs-each" target="_blank">1 large egg</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/24032-arm-hammer-pure-baking-soda-16-oz" target="_blank">1 teaspoon baking soda</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/19554430-sunnyside-farms-vitamin-d-milk-128-fl-oz" target="_blank">1 teaspoon milk</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/2690252-gold-medal-all-purpose-flour-5-000-lbs" target="_blank">2 cups all-purpose flour</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/87608-mccormick-ground-cinnamon-2-37-oz" target="_blank">2 teaspoons cinnamon</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/19553303-sunny-select-salt-plain-26-oz" target="_blank">½ teaspoon salt</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/38945-toll-house-semi-sweet-chocolate-chips-12-oz" target="_blank">2 cups semisweet chocolate chips</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/69186-mccormick-all-natural-pure-vanilla-extract-1-fl-oz" target="_blank">1 teaspoon vanilla extract</a></li>
+        <li><a href="https://shop.savemart.com/store/savemart/products/69391-diamond-walnuts-chopped-2-25-oz" target="_blank">½ cup chopped walnuts (optional)</a></li>
+    </ul>
+</div>
+
+<div id="Preparation" class="tabcontent">
+    <h2>Preparation Steps</h2>
+    <ol>
+        <li>Preheat your oven to 350°F (175°C) and line a baking sheet with parchment paper.</li>
+        <li>Mix the pumpkin, sugar, oil, and egg in a bowl until smooth.</li>
+        <li>Dissolve the baking soda in milk and add it to the mixture.</li>
+        <li>In a separate bowl, combine the flour, cinnamon, and salt.</li>
+        <li>Stir the dry ingredients into the wet mixture.</li>
+        <li>Add chocolate chips, vanilla, and walnuts (if using).</li>
+        <li>Drop spoonfuls of dough onto the baking sheet.</li>
+        <li>Bake 12–15 minutes until the cookies are set around the edges.</li>
+        <li>Cool and enjoy!</li>
+    </ol>
+    <p>
+        For more ingredient nutrition facts, visit  
+        <a href="https://www.nutritionix.com" target="_blank">Nutritionix</a>.
+    </p>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    // Hide all tabcontent
+    const tabcontent = document.getElementsByClassName("tabcontent");
+    for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove active class from all buttons
+    const tablinks = document.getElementsByClassName("tablinks");
+    for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show selected tab and add active class
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Open the default tab
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
